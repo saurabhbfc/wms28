@@ -1,5 +1,5 @@
 //var mongoose = require("mongoose");
-import mongoose from 'mongoose';
+ import mongoose from 'mongoose';
 const options = {
       useMongoClient: true,
       autoIndex: false, // Don't build indexes

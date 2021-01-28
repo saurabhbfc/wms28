@@ -29,13 +29,11 @@ import bodyParser from 'body-parser';
 //import orderRouter from './routes/orderRouter.js';
 
 import morgan from 'morgan';
-//import db from './config.js';
-import config from './config.js';
+import db from './config.js';
+//import config from './config.js';
 import cors from 'cors';
 import Axios from 'axios';
 var Schema = mongoose.Schema;
-
-var db = config;
 
 var app = express();
 //var port = process.env.port || 3001;

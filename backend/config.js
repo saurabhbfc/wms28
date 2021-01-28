@@ -1,5 +1,5 @@
 //var mongoose = require("mongoose");
-/* import mongoose from 'mongoose';
+import mongoose from 'mongoose';
 const options = {
       useMongoClient: true,
       autoIndex: false, // Don't build indexes
@@ -18,11 +18,7 @@ mongoose.connect("mongodb://localhost:27017/wms", options , function(err, respon
 });
 
 
-module.exports =db; */
+module.exports =db;
 
 // reactcrud is database name
 // 192.168.1.71:27017 is your mongo server name
-export default {
-    MONGODB_URL: process.env.MONGODB_URL || 'mongodb://localhost:27017/wms',
-    JWT_SECRET: process.env.JWT_SECRET || 'somethingsecret'
-}

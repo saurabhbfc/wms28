@@ -81,7 +81,7 @@ const navcams = new Schema({
     Date: { type: String },
 }, { versionKey: false });
 
-
+var i='';
 const foliocams = new Schema({
     amc_code: { type: String },
     foliochk: { type: String },

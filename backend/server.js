@@ -29,7 +29,8 @@ import bodyParser from 'body-parser';
 //import orderRouter from './routes/orderRouter.js';
 
 import morgan from 'morgan';
-import db from './config.js';
+//import db from './config.js';
+import config from './config.js';
 import cors from 'cors';
 import Axios from 'axios';
 var Schema = mongoose.Schema;
@@ -827,7 +828,7 @@ app.post("/api/savefoliocamsold", function (req, res) {
 
 app.post("/api/savefoliocams", function (req, res) {
     for (i = 0; i < req.body.length; i++) {   
-       db.collection('folio_cams').updateMany(
+       config.collection('folio_cams').updateMany(
                     { pan_no: req.body[i].pan_no , product: req.body[i].product }, 
                       {$set: 
                         { amc_code : req.body[i].amc_code ,
@@ -863,7 +864,7 @@ app.post("/api/savefoliocams", function (req, res) {
 
  app.post("/api/savetranscams", function (req, res) {
     for (i = 0; i < req.body.length; i++) {   
-       db.collection('trans_cams').updateMany(
+       config.collection('trans_cams').updateMany(
                     { trxnno: req.body[i].trxnno }, 
                       {$set: 
                         { folio_no : req.body[i].folio_no ,
@@ -1025,7 +1026,7 @@ for (i = 0; i < req.body.length; i++) {
 //api for Update data from database
 app.post("/api/Updatedata", function (req, res) {
     for (i = 0; i < req.body.length; i++) {   
-       db.collection('cams_nav').findAndModify(
+       config.collection('cams_nav').findAndModify(
                     {trxnno: req.body[i].trxnno}, // query
                     [['_id','asc']],  // sort order
                     {$set: { folio_no : req.body[i].folio_no ,
@@ -1054,7 +1055,7 @@ app.post("/api/Updatedata", function (req, res) {
 
  app.post("/api/Updateinsertdata", function (req, res) {
     for (i = 0; i < req.body.length; i++) {   
-       db.collection('cams_nav').updateMany(
+       config.collection('cams_nav').updateMany(
                     { name : req.body[i].name}, 
                       {$set: { name : req.body[i].name ,
                         pin : req.body[i].pin ,

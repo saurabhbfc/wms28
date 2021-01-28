@@ -50,9 +50,9 @@ app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 
 
 dotenv.config();
-//const mongodbUrl= config.MONGODB_URL;
+const mongodbUrl= config.MONGODB_URL;
 
-const mongodbUrl= process.env.MONGODB_URL || 'mongodb+srv://Saurabh:Saurabh@123@cluster0.xavdk.mongodb.net/wms?retryWrites=true&w=majority' ;
+/* const mongodbUrl= process.env.MONGODB_URL || 'mongodb+srv://Saurabh:Saurabh@123@cluster0.xavdk.mongodb.net/wms?retryWrites=true&w=majority' ; */
 
 mongoose.connect(mongodbUrl, {
 	useNewUrlParser:true,

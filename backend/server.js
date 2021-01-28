@@ -17,7 +17,7 @@
 
 
 import express from 'express';
-import data from './data.js';
+//import data from './data.js';
 //import dotenv from 'dotenv';
  //import config from './config.js';
  import mongoose from 'mongoose';

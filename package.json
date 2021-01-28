@@ -31,7 +31,6 @@
     "npm": "6.9.0"
   },
   "devDependencies": {
-   "nodemon": "^2.0.7",
-   "react-scripts": "0.4.1"
+   "nodemon": "^2.0.7"
    }
 }

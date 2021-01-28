@@ -54,6 +54,7 @@
   "devDependencies": {
     "bootstrap": "^5.0.0-beta1",
     "bootstrap-loader": "^3.0.4",
+    "create-react-class": "^15.7.0",
     "jquery": "^3.5.1",
     "tether": "^1.4.7"
   }

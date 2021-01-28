@@ -1,18 +1,39 @@
 //mongodb+srv://123:<password>@cluster-wms.0uh3j.mongodb.net/test
-var express = require("express");
-var path = require("path");
-var bodyParser = require('body-parser');
-var morgan = require("morgan");
-var db = require("./config.js");
-var cors = require('cors');
-var mongoose = require('mongoose');
+//var express = require("express");
+//var path = require("path");
+//var bodyParser = require('body-parser');
+//var morgan = require("morgan");
+//var db = require("./config.js");
+//var cors = require('cors');
+//var mongoose = require('mongoose');
 //const joinQuery = require("mongo-join-query");
-var Schema = mongoose.Schema;
+
 //const CircularJSON = require('circular-json');
-const Axios = require("axios");
+//const Axios = require("axios");
 //const db = require("./config.js");
 //const { json } = require("express");
 //const foliokarvy = require("./route.js");
+
+
+
+import express from 'express';
+import data from './data.js';
+//import dotenv from 'dotenv';
+ //import config from './config.js';
+ import mongoose from 'mongoose';
+ import path from 'path';
+ //import userRoute from './routes/userRoute.js';
+ //import productRoute from './routes/productRoute.js';
+ //import uploadRouter from './routes/uploadRouter.js';
+import bodyParser from 'body-parser';
+//import orderRouter from './routes/orderRouter.js';
+
+import morgan from 'morgan';
+import db from './config.js';
+import cors from 'cors';
+import Axios from 'axios';
+var Schema = mongoose.Schema;
+
 var app = express();
 //var port = process.env.port || 3001;
 var srcpath = path.join(__dirname, '/public');

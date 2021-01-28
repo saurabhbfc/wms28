@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 import 'react-day-picker/lib/style.css';
 import $ from 'jquery';
-import Axios from 'axios';
+//import Axios from 'axios';
 import '../../../node_modules/aos/dist/aos.css';
 import MomentLocaleUtils, {
   formatDate,

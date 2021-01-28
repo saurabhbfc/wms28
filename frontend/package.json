@@ -27,7 +27,8 @@
     "react-slider-swiper": "^2.0.6",
     "react-toastify": "^6.2.0",
     "resolve-url-loader": "^3.1.1",
-    "xlsx": "^0.16.9"
+    "xlsx": "^0.16.9",
+	"jquery": "^3.5.1"
   },
   "scripts": {
     "start": "react-scripts start",

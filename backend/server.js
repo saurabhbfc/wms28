@@ -29,7 +29,7 @@ import bodyParser from 'body-parser';
 //import orderRouter from './routes/orderRouter.js';
 
 import morgan from 'morgan';
-import db from './config.js';
+//import db from './config.js';
 //import config from './config.js';
 import cors from 'cors';
 import Axios from 'axios';
@@ -54,7 +54,7 @@ dotenv.config();
 
 const mongodbUrl= process.env.MONGODB_URL || 'mongodb+srv://Saurabh:Saurabh@123@cluster0.xavdk.mongodb.net/wms?retryWrites=true&w=majority' ;
 
-mongoose.connect(mongodbUrl, {
+var db=mongoose.connect(mongodbUrl, {
 	useNewUrlParser:true,
 	useUnifiedTopology: true,
 	useCreateIndex:true

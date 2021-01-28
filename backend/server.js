@@ -35,6 +35,8 @@ import cors from 'cors';
 import Axios from 'axios';
 var Schema = mongoose.Schema;
 
+var db = config;
+
 var app = express();
 //var port = process.env.port || 3001;
 var srcpath = path.join(__dirname, '/public');
